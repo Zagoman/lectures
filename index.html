@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>TypeScript</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>First steps on TypeScript</h1>
+        </section>
+        <section>
+          <h2>By the end you should have...</h2>
+          <ol>
+            <li>an idea of what TypeScript is</li>
+            <li>a basic understanding of types</li>
+            <li>a good idea of how to use types with React and Next</li>
+          </ol>
+        </section>
+        <section>
+          <section>
+            <h2>What is TypeScript and is it relevant?</h2>
+            <figure>
+              <blockquote>
+                TypeScript is a strongly typed programming language that builds
+                on JavaScript, giving you better tooling at any scale.
+              </blockquote>
+              <figcaption>- TypeScript Organization</figcaption>
+            </figure>
+          </section>
+          <section>
+            <p>
+              In short, TypeScript is a superset of JavaScript, that allows you
+              to define blueprints for the implementation of your application.
+            </p>
+            <p>
+              These blueprints give your IDE the chance of understanding what
+              you are coding, and giving you great error checking while coding.
+            </p>
+          </section>
+          <section>
+            <h2>A few benefits of using TypeScript</h2>
+            <ol>
+              <li>You get to catch erros a lot before they happen</li>
+              <li>You rely less on console.log</li>
+              <li>
+                Your IDE becomes a bigger help by giving you great auto
+                completion
+              </li>
+              <li>
+                It is easier to work in groups when good principles of type
+                safety are applied
+              </li>
+              <li>
+                It is an "easy" language to learn, since any JavaScript is valid
+                TypeScript
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h2>Some common types</h2>
+            <pre>
+				<code>
+					<script type="text/template">
+	type Name = string;
+	type Age = number;
+	type IsMuggle = boolean;
+	type House = "Gryffindor" | "Hufflepuff" | "Ravenclaw" | "Slytherin";
+	type Pets = string[];
+					</script>
+				</code>
+			</pre>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Enough talking, let's code...</h1>
+          </section>
+          <section>
+            <pre>
+				<code>
+    npx create-next-app@latest --typescript
+				</code>
+			</pre>
+          </section>
+        </section>
+
+        <section>
+          <h1>GitHub Repo</h1>
+          <a href="https://github.com/Zagoman/intro-typescript-with-forms">
+            Intro to TS with forms
+          </a>
+        </section>
+        <section>
+            <section>
+                <h1>Questions??</h1>
+            </section>
+          <section>
+              <h2>Here are a few to get you started</h1>
+              <ul>
+                  <li>What are my next steps when it comes to TS?</li>
+                  <li>How do I know I am qualified to apply to TS jobs?</li>
+                  <li>TS can't be only what you've taught, what else should I learn?</li>
+              </ul>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      })
+    </script>
+  </body>
+</html>
